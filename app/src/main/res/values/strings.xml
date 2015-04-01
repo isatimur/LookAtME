@@ -1,0 +1,63 @@
+<!--
+  Copyright 2014 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources>
+    <!-- Shown as a link in the About screen of the app; user can click to see the EULA. -->
+    <string name="about_eula">End User License Agreement</string>
+
+    <!-- Shown as a link in the About screen of the app; user can click it to see the licenses. -->
+    <string name="about_licenses">Open Source Licenses</string>
+
+    <string name="start_tracking">Start tracking</string>
+
+    <string name="stop_tracking">Stop tracking</string>
+
+    <!-- Name of the application, shown in the application's title bar. -->
+    <string name="app_name">LookAtME</string>
+
+    <!-- Text on a button that takes the user to the device's Settings screen. -->
+    <string name="go_to_settings">Go to Settings</string>
+
+
+    <!-- Message presented while data is loading in Explore view -->
+    <string name="loading">Loading&#8230;</string>
+
+    <!-- Message shown in an error bar when there is a problem synchronizing the user's sessions
+    to their account. Can be summarized as "Synchronization failed." if too long [CHAR_LIMIT=50] -->
+    <string name="login_failed_text">Could not sync your sessions due to an error.</string>
+
+    <!-- Navigation bar text for the map -->
+    <string name="title_map">Map</string>
+
+    <!-- Label for Settings activity -->
+    <string name="title_settings">Settings</string>
+
+    <!-- Accessibility text announced as a response to pressing a button to add a session to the schedule. -->
+    <string name="session_details_a11y_session_added">Session added to your schedule</string>
+
+    <!-- Accessibility text announced as a response to pressing a button to remove a session from the schedule. -->
+    <string name="session_details_a11y_session_removed">Session removed from your schedule</string>
+
+    <!-- Toast failure message if the user's wifi couldn't be updated -->
+    <string name="wifi_install_error_message">Sorry, unable to update WiFi configuration</string>
+    <string name="lbl_you_are_at">YOU ARE AT</string>
+    <string name="btn_get_location">GET MY LOCATION</string>
+    <string name="btn_start_location_updates">START LOCATION UPDATES</string>
+    <string name="btn_stop_location_updates">STOP LOCATION UPDATES</string>
+    <string name="startButtonString">Start</string>
+    <string name="stopButtonString">Stop</string>
+
+</resources>
+

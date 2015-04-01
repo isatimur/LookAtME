@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.apps.isatimur.lookatme"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        release {
+            storeFile file('/home/souldragon/androidKeyStoreMap.jks')
+            storePassword ''
+            keyAlias 'LookAtMeAlias'
+            keyPassword ''
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+        demo {
+            applicationId "com.apps.isatimur.lookatme.demo"
+            versionName "1.0-demo"
+        }
+        full {
+            applicationId "com.apps.isatimur.lookatme.full"
+            versionName "1.0-full"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.+'
+    compile 'com.android.support:support-v13:21.+'
+    compile 'com.android.support:support-v4:22.+'
+    compile 'com.android.support:palette-v7:+'
+    compile 'com.android.support:recyclerview-v7:+'
+    compile 'com.android.support:cardview-v7:21.0.+'
+    compile 'com.google.android.gms:play-services:7.+'
+    compile 'com.squareup.retrofit:retrofit:1.9.+'
+    compile 'com.squareup.retrofit:retrofit:1.9.+'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
+}

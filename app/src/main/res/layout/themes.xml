@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style
+    name="Theme.MyTheme"
+    layout_height="wrap_content"
+    layout_width="wrap_content"
+    parent="Theme.AppCompat.Light">
+
+    <item name="colorPrimary">@color/my_awesome_color</item>
+
+    <item name="colorPrimaryDark">@color/my_awesome_darker_color</item>
+
+    <item name="colorAccent">@color/accent</item>
+
+</style>
